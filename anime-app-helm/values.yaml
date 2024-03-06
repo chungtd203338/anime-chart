@@ -1,0 +1,13 @@
+app:
+  image: chung123abc/web-anime:v1.0
+  port: 5000
+  replicaset: 2
+  service:
+    nodeport: 30100
+
+mongo:
+  image: mongo:4.4.18
+  port: 27017
+  replicaset: 1
+  service:
+    nodeport: 30200
